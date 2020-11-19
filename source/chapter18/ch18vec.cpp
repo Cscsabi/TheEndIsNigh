@@ -2,7 +2,7 @@
 
 vector<int> gv { 1, 2, 4, 8, 16, 32, 64, 128, 256, 512 };
 
-void f(vector<int> gv)
+void f(vector<int> xv)
 {
 	vector<int> lv(10);
 	for(int i = 0; i < 10; ++i)
@@ -13,7 +13,7 @@ void f(vector<int> gv)
 
 	cout << endl;
 	vector<int> lv2(10);
-	lv2 = gv;
+	lv2 = xv;
 
 	for(auto& v : lv2)
 		cout << v << '\t';
