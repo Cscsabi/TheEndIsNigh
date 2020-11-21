@@ -77,10 +77,6 @@ int main()
 	S<string> word {"something"};
 	S<vector<int>> v { vector<int>{15, 23, 12, 41} };
 	
-
-	
-
-
 	cout << num.get() << endl;
 	cout << letter.get() << endl;
 	cout << floating.get() << endl;
@@ -89,7 +85,6 @@ int main()
         cout << a << ' ';
     cout << '\n';
 
-    
     num.set(20);
     cout << num.get() << endl;
 
@@ -117,15 +112,12 @@ int main()
     cout << "S<double> read: " << sd2.get() << '\n';
     cout << "S<string> read: " << s2.get() << '\n';
     
-
     cout << "Vector<int>: (format: { val1, val2, val3 }) ";
     vector<int> v2;
     read_val(v2);
     S<vector<int>> v3 {v2};
 
     cout << "S<vector<int>> read: " << v3.get();
-    
-    
 
 	return 0;
 }
